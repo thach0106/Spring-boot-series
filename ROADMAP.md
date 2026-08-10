@@ -94,7 +94,9 @@
 | Lesson | Topic | Date | Status |
 |---|---|---|---|
 | 01 | Java for NestJS devs: JVM mental model, syntax delta, records | 2026-08-07 | Delivered — JShell exercise pending |
+| 02 | Streams + Optional: lazy pipelines, killing null | 2026-08-10 | Delivered — JShell exercise + CSV export homework pending |
 
 ## Lessons
 
 - [01 — Java for NestJS developers](lessons/01-java-for-nestjs-developers.md)
+- [02 — Streams + Optional](lessons/02-streams-and-optional.md)
