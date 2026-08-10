@@ -79,15 +79,14 @@
 - Test pyramid: JUnit/Mockito unit → `@WebMvcTest`/`@DataJpaTest` slices → Testcontainers integration
 - Actuator health/metrics on from day one
 
-## Environment (verified live 2026-08-07)
+## Environment (rebuilt + verified live 2026-08-10)
 
-- JDK: **Temurin 21.0.11 LTS** (`java -version` ✓)
-- Maven: 3.9.16 — MSYS **doubled-path quirk**: `mvn` loads its launcher from `C:\c\tools\apache-maven-3.9.16` (proven by rename test; **do not delete** `C:\c\tools`). `MAVEN_HOME=C:\tools\apache-maven-3.9.16` (used by cmd/IDE)
-- Spring Boot: **4.1.0** — Maven Central publishes plain versions (**no `.RELEASE` suffix**; Initializr metadata bug found 2026-08-07 — verify before trusting)
-- Project: `url-shortener/` — Boot 4.1.0, Java 21, starters: `webmvc`, `validation`, `actuator` (+ `-test` variants)
-- Docker 29.3.1 — for PostgreSQL/Kafka in phases 4–6
-- GitHub: `thach0106/Spring-boot-series`
-- git identity: `thach0106` / `thachnn@icd-vn.com`
+- JDK: **Temurin 21.0.12+8 LTS** at `C:\Users\thach\dev\java\jdk-21.0.12+8` (user-level portable install; no admin needed). `JAVA_HOME` (User) points there; User var overrides the stale Machine `JAVA_HOME` (OpenJDK 11) and PATH `java` (JDK 15) — old installs still exist but are shadowed
+- Maven: **3.9.16** at `C:\Users\thach\dev\maven\apache-maven-3.9.16`. MSYS fix applied: patched `bin/mvn` to add the missing **MinGW→Windows path conversion** (upstream only converts back for Cygwin → `ClassNotFoundException: classworlds.Launcher` on git-bash; the extra `if $mingw` block runs `cygpath --path --windows` on MAVEN_HOME/JAVA_HOME/CLASSWORLDS_JAR)
+- Spring Boot: **4.1.0** (plain version on Central; Initializr still emits `4.1.0.RELEASE` which 404s — **patch pom.xml after every Initializr generation**). Starters renamed: `web`→`webmvc`, test starters split (`webmvc-test` etc.)
+- Project: `url-shortener/` — Boot 4.1.0, Java 21, starters: `webmvc`, `validation`, `actuator` (+ `-test` variants). **`mvn test` → BUILD SUCCESS** (1 test, 2:02 min first run)
+- Docker 29.3.1 (Docker Desktop; only `docker-desktop` WSL distro, no Ubuntu) — for PostgreSQL/Kafka in phases 4–6
+- GitHub: `thach0106/Spring-boot-series`; repo-local git identity: `thach0106` / `thachnn@icd-vn.com` (global is `Thach Da` / `thachbovjp@gmail.com` — **repo-local override required, set via `git config user.name/email` inside the repo**)
 
 ## Lesson log
 
