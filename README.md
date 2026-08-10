@@ -11,6 +11,7 @@ Java + Spring Boot learning series for a NestJS/Node backend engineer — target
 |---|---|---|
 | 01 | [Java for NestJS developers](lessons/01-java-for-nestjs-developers.md) | JVM mental model, syntax delta, records |
 | 02 | [Streams + Optional](lessons/02-streams-and-optional.md) | Lazy pipelines, filter/map/reduce, killing null |
+| 03 | [Generics, Collections, Exceptions](lessons/03-generics-collections-exceptions.md) | Invariance, implementation choices, checked vs unchecked |
 
 ## Repo layout
 

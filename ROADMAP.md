@@ -13,7 +13,7 @@
 | Phase | Topic | Status | Notes |
 |---|---|---|---|
 | 0 | Environment setup | ✅ Done | JDK 21 Temurin · Maven 3.9.16 · Spring Boot 4.1.0 scaffold in `url-shortener/` (build + tests + health check verified) |
-| 1 | Java language (delta from TS) | 🔄 In progress | Lesson 01 delivered — JShell exercise pending |
+| 1 | Java language (delta from TS) | 🔄 In progress | Lessons 01–03 delivered (records, streams, Optional, generics, collections, exceptions) — CompletableFuture/virtual threads + Phase 1 deliverable (CSV export in Java) pending |
 | 2 | Spring core (IoC/DI, beans, scopes, profiles, config) | ⬜ Not started | |
 | 3 | Web layer (MVC, validation, exceptions, Actuator) | ⬜ Not started | Deliverable: **URL Shortener REST API** |
 | 4 | Data (Spring Data JPA, Hibernate, Flyway, PostgreSQL) | ⬜ Not started | Deliverable: URL shortener + persistence |
@@ -94,8 +94,10 @@
 |---|---|---|---|
 | 01 | Java for NestJS devs: JVM mental model, syntax delta, records | 2026-08-07 | Delivered — JShell exercise pending |
 | 02 | Streams + Optional: lazy pipelines, killing null | 2026-08-10 | Delivered — JShell exercise + CSV export homework pending |
+| 03 | Generics, collections, exceptions: invariance, impl choices, checked vs unchecked | 2026-08-10 | Delivered — JShell exercise + Paging utility homework pending |
 
 ## Lessons
 
 - [01 — Java for NestJS developers](lessons/01-java-for-nestjs-developers.md)
 - [02 — Streams + Optional](lessons/02-streams-and-optional.md)
+- [03 — Generics, Collections, Exceptions](lessons/03-generics-collections-exceptions.md)
