@@ -325,4 +325,4 @@ Implementation notes: `items.stream().limit(limit).toList()` is the core; decide
 
 ## Next
 
-Lesson 04: **Spring Core — IoC/DI, beans, scopes, profiles**. You now have the whole Java delta (records, streams, Optional, generics, collections, exceptions). Time to wire beans and build the URL Shortener REST API (Phase 2–3).
+Lesson 04: **Concurrency — threads, virtual threads, CompletableFuture** (completes Phase 1's language topics), then Lesson 05: **Spring Core — IoC/DI, beans, scopes, profiles** — time to wire beans and build the URL Shortener REST API (Phase 2–3).

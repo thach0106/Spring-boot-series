@@ -8,14 +8,14 @@
 - ~70% of NestJS knowledge transfers (DI, ORM, controllers, validation, testing) — this is a dialect, not a new language
 - One big mental shift: **threads instead of an event loop** (virtual threads since JDK 21)
 
-## Status (updated 2026-08-07)
+## Status (updated 2026-08-11)
 
 | Phase | Topic | Status | Notes |
 |---|---|---|---|
 | 0 | Environment setup | ✅ Done | JDK 21 Temurin · Maven 3.9.16 · Spring Boot 4.1.0 scaffold in `url-shortener/` (build + tests + health check verified) |
-| 1 | Java language (delta from TS) | 🔄 In progress | Lessons 01–03 delivered (records, streams, Optional, generics, collections, exceptions) — CompletableFuture/virtual threads + Phase 1 deliverable (CSV export in Java) pending |
-| 2 | Spring core (IoC/DI, beans, scopes, profiles, config) | ⬜ Not started | |
-| 3 | Web layer (MVC, validation, exceptions, Actuator) | ⬜ Not started | Deliverable: **URL Shortener REST API** |
+| 1 | Java language (delta from TS) | 🔄 In progress | Lessons 01–04 delivered (records, streams, Optional, generics, collections, exceptions, CompletableFuture, virtual threads) — Phase 1 deliverable (CSV export in Java) pending |
+| 2 | Spring core (IoC/DI, beans, scopes, profiles, config) | 🔄 In progress | Lesson 05 delivered — Hello + 2 services DI exercise; typed-config homework pending |
+| 3 | Web layer (MVC, validation, exceptions, Actuator) | 🔄 In progress | Lesson 06 delivered — URL Shortener REST API exercise (POST/GET/302/404/ProblemDetail); pagination + slice test homework pending |
 | 4 | Data (Spring Data JPA, Hibernate, Flyway, PostgreSQL) | ⬜ Not started | Deliverable: URL shortener + persistence |
 | 5 | Integration (Redis cache, Kafka, scheduling, Resilience4j) | ⬜ Not started | Maps 1:1 onto News Feed design |
 | 6 | Production (Testcontainers, metrics, Dockerfile, logging) | ⬜ Not started | Deliverable: runs in Docker with health checks |
@@ -95,9 +95,15 @@
 | 01 | Java for NestJS devs: JVM mental model, syntax delta, records | 2026-08-07 | Delivered — JShell exercise pending |
 | 02 | Streams + Optional: lazy pipelines, killing null | 2026-08-10 | Delivered — JShell exercise + CSV export homework pending |
 | 03 | Generics, collections, exceptions: invariance, impl choices, checked vs unchecked | 2026-08-10 | Delivered — JShell exercise + Paging utility homework pending |
+| 04 | Concurrency: threads, virtual threads, CompletableFuture — async without the event loop | 2026-08-11 | Delivered — JShell exercise + CSV export homework pending |
+| 05 | Spring Core: IoC/DI, beans, scopes, profiles, typed configuration | 2026-08-11 | Delivered — DI exercise + AppProperties homework pending |
+| 06 | Web layer: REST controllers, DTO records, Jakarta validation, ProblemDetail errors, Actuator | 2026-08-11 | Delivered — URL Shortener API exercise; pagination + slice test homework pending |
 
 ## Lessons
 
 - [01 — Java for NestJS developers](lessons/01-java-for-nestjs-developers.md)
 - [02 — Streams + Optional](lessons/02-streams-and-optional.md)
 - [03 — Generics, Collections, Exceptions](lessons/03-generics-collections-exceptions.md)
+- [04 — Concurrency: CompletableFuture + virtual threads](lessons/04-concurrency-completablefuture-virtual-threads.md)
+- [05 — Spring Core: IoC/DI, beans, profiles](lessons/05-spring-core-ioc-di-beans-profiles.md)
+- [06 — Web layer: REST, validation, errors, Actuator](lessons/06-web-layer-rest-validation-errors-actuator.md)
