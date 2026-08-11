@@ -16,6 +16,7 @@ Java + Spring Boot learning series for a NestJS/Node backend engineer — target
 | 05 | [Spring Core: IoC/DI, beans, profiles](lessons/05-spring-core-ioc-di-beans-profiles.md) | ApplicationContext, constructor injection, scopes, typed config |
 | 06 | [Web layer: REST, validation, errors, Actuator](lessons/06-web-layer-rest-validation-errors-actuator.md) | @RestController, Jakarta validation, ProblemDetail, probes |
 | 07 | [Spring Security + AOP: JWT auth](lessons/07-spring-security-jwt-aop.md) | Filter chain, proxy mechanism, 401 vs 403, roles |
+| 08 | [Spring Data JPA + Flyway + PostgreSQL](lessons/08-spring-data-jpa-flyway-postgresql.md) | Entities, repositories, N+1, transactions |
 
 ## Repo layout
 

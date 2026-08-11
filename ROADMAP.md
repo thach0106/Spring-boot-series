@@ -16,7 +16,7 @@
 | 1 | Java language (delta from TS) | 🔄 In progress | Lessons 01–04 delivered (records, streams, Optional, generics, collections, exceptions, CompletableFuture, virtual threads) — Phase 1 deliverable (CSV export in Java) pending |
 | 2 | Spring core (IoC/DI, beans, scopes, profiles, config) | 🔄 In progress | Lesson 05 delivered — Hello + 2 services DI exercise; typed-config homework pending |
 | 3 | Web layer (MVC, validation, exceptions, Actuator) | 🔄 In progress | Lessons 06–07 delivered — URL Shortener REST API + JWT auth (register/login, filter chain, 401 entry point); pagination + slice test homework pending |
-| 4 | Data (Spring Data JPA, Hibernate, Flyway, PostgreSQL) | ⬜ Not started | Deliverable: URL shortener + persistence |
+| 4 | Data (Spring Data JPA, Hibernate, Flyway, PostgreSQL) | 🔄 In progress | Lesson 08 delivered + **verified** (JPA + Flyway + PG 17.10 in Docker, 8 probes passed) — V2 migration + rollback/lazy homework pending |
 | 5 | Integration (Redis cache, Kafka, scheduling, Resilience4j) | ⬜ Not started | Maps 1:1 onto News Feed design |
 | 6 | Production (Testcontainers, metrics, Dockerfile, logging) | ⬜ Not started | Deliverable: runs in Docker with health checks |
 | 7 | Optional: Spring Security, WebFlux/WebClient, Boot 4 / Java 25 diffs | ⬜ Not started | |
@@ -99,6 +99,7 @@
 | 05 | Spring Core: IoC/DI, beans, scopes, profiles, typed configuration | 2026-08-11 | Delivered — DI exercise + AppProperties homework pending |
 | 06 | Web layer: REST controllers, DTO records, Jakarta validation, ProblemDetail errors, Actuator | 2026-08-11 | Delivered — URL Shortener API exercise; pagination + slice test homework pending |
 | 07 | Spring Security + AOP: JWT auth, filter chain, proxy mechanism, 401 vs 403 | 2026-08-11 | Delivered + **code verified** (compiled, ran, 8 curl probes passed) — roles homework pending |
+| 08 | Spring Data JPA + Flyway + PostgreSQL: entities, repositories, N+1, transactions | 2026-08-11 | Delivered + **code verified** (Hibernate 7.4.1, PG 17.10 in Docker, 8 probes passed) — V2 migration + rollback/lazy homework pending |
 
 ## Lessons
 
@@ -109,3 +110,4 @@
 - [05 — Spring Core: IoC/DI, beans, profiles](lessons/05-spring-core-ioc-di-beans-profiles.md)
 - [06 — Web layer: REST, validation, errors, Actuator](lessons/06-web-layer-rest-validation-errors-actuator.md)
 - [07 — Spring Security + AOP: JWT auth](lessons/07-spring-security-jwt-aop.md)
+- [08 — Spring Data JPA + Flyway + PostgreSQL](lessons/08-spring-data-jpa-flyway-postgresql.md)
