@@ -15,7 +15,7 @@
 | 0 | Environment setup | ✅ Done | JDK 21 Temurin · Maven 3.9.16 · Spring Boot 4.1.0 scaffold in `url-shortener/` (build + tests + health check verified) |
 | 1 | Java language (delta from TS) | 🔄 In progress | Lessons 01–04 delivered (records, streams, Optional, generics, collections, exceptions, CompletableFuture, virtual threads) — Phase 1 deliverable (CSV export in Java) pending |
 | 2 | Spring core (IoC/DI, beans, scopes, profiles, config) | 🔄 In progress | Lesson 05 delivered — Hello + 2 services DI exercise; typed-config homework pending |
-| 3 | Web layer (MVC, validation, exceptions, Actuator) | 🔄 In progress | Lesson 06 delivered — URL Shortener REST API exercise (POST/GET/302/404/ProblemDetail); pagination + slice test homework pending |
+| 3 | Web layer (MVC, validation, exceptions, Actuator) | 🔄 In progress | Lessons 06–07 delivered — URL Shortener REST API + JWT auth (register/login, filter chain, 401 entry point); pagination + slice test homework pending |
 | 4 | Data (Spring Data JPA, Hibernate, Flyway, PostgreSQL) | ⬜ Not started | Deliverable: URL shortener + persistence |
 | 5 | Integration (Redis cache, Kafka, scheduling, Resilience4j) | ⬜ Not started | Maps 1:1 onto News Feed design |
 | 6 | Production (Testcontainers, metrics, Dockerfile, logging) | ⬜ Not started | Deliverable: runs in Docker with health checks |
@@ -98,6 +98,7 @@
 | 04 | Concurrency: threads, virtual threads, CompletableFuture — async without the event loop | 2026-08-11 | Delivered — JShell exercise + CSV export homework pending |
 | 05 | Spring Core: IoC/DI, beans, scopes, profiles, typed configuration | 2026-08-11 | Delivered — DI exercise + AppProperties homework pending |
 | 06 | Web layer: REST controllers, DTO records, Jakarta validation, ProblemDetail errors, Actuator | 2026-08-11 | Delivered — URL Shortener API exercise; pagination + slice test homework pending |
+| 07 | Spring Security + AOP: JWT auth, filter chain, proxy mechanism, 401 vs 403 | 2026-08-11 | Delivered + **code verified** (compiled, ran, 8 curl probes passed) — roles homework pending |
 
 ## Lessons
 
@@ -107,3 +108,4 @@
 - [04 — Concurrency: CompletableFuture + virtual threads](lessons/04-concurrency-completablefuture-virtual-threads.md)
 - [05 — Spring Core: IoC/DI, beans, profiles](lessons/05-spring-core-ioc-di-beans-profiles.md)
 - [06 — Web layer: REST, validation, errors, Actuator](lessons/06-web-layer-rest-validation-errors-actuator.md)
+- [07 — Spring Security + AOP: JWT auth](lessons/07-spring-security-jwt-aop.md)
